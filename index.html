@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, 
+  initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>web app</title>
+</head>
+<body>
+    <main>
+        <label>Add Task:</label>
+        <input type="text" id="name-input" placeholder="Task name">
+
+        <label>Description:</label>
+        <input type="text" id="description-input" placeholder ="Task description">
+
+        <label>Due Date:</label>
+        <input type="date" id="date-due-input">
+
+        <button id="add-name-btn">Add task</button>
+        
+        <br><br><br>
+        <div>
+          <input placeholder="search by name" id="search-input">
+          <button id="search-btn">Search</button>
+        </div>
+
+        <table id="table">
+          <thead>
+            <th>Task</th>
+            <th>Task Description</th>
+            <th>Due Date</th>
+            <th>Delete</th>
+            <th>Edit</th>  
+          </thead>
+          <tbody></tbody>
+        </table>
+
+        <br><br>
+        <h2>Tasks by date</h2>
+        <button id="load-sorted-btn">Load Sorted Tasks</button>
+        <table id="sorted-table">
+          <thead>
+            <th>Task Name</th>
+            <th>Due Date</th>
+          </thead>
+          <tbody></tbody>
+        </table>
+
+        <section hidden id ="update-row">
+            <label>Task Name:</label>
+            <input type="text" id="update-name-input">
+
+            <label>Description:</label>
+            <input type="text" id="update-description-input">
+
+            <label>Due Date:</label>
+            <input type="date" id="update-date-due-input">
+
+            <button id="update-row-btn">Update</button>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
